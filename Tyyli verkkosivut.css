@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*KUVA*/
+.column img {
+    width: 400px;
+    height: auto;
+}
+
+
+
+/*NAPPI ETUSIVULLE*/
+.back-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 4px;
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    font-size: 18px;
+}
+
+.back-btn:hover {
+    background-color: rgb(235, 120, 150);
+    font-family: 'Cormorant Garamond', sans-serif;
+
+}
+
+
+
+/*OTSIKKO*/
+h1 {
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', sans-serif;
+    width: 100%;
+}
+
+/*OTSIKKO 2*/
+.Ansioluettelo h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+/*OTSIKKO 3*/
+.Otayhteyttä h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+/*KUVATEKSTI*/
+section {
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*CV TEKSTIT*/
+.column {
+    float: left;
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+.left {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 15px;
+    float: left;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.right {
+    width: 50%;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    list-style-position: inside;
+    text-align: left;
+}
+
+.cv-row h3 {
+    margin-top: 0;
+}
+
+
+/*NAPIT SIVUIHIN*/
+.btn {
+    display: inline-block;
+    background-color: rgb(248, 147, 164);
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    transition: 0.3s;
+    margin: 50px;
+}
+
+.btn:hover {
+    background-color: rgb(230, 120, 140);
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+
+nav {
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+/*OTA YHTEYTTÄ LOMAKE*/
+.contact-form {
+    width: 500px;
+    margin: 50px auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #777;
+    background-color: #e8e8e8;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Cormorant Garamond', sans-serif;
+    letter-spacing: 3px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-form button:hover {
+    background: #333;
+}
+
+/*LOMAKE LOPPUU*/
+/*ALAOSA VÄRI*/
+footer {
+    background-color: rgb(248, 147, 164);
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/*ALAOSA TEKSTI*/
+footer {
+    text-align: center;
+    color: white;
+
+    .linkedin-icon {
+        width: 40px;
+        /* kuvakkeen leveys */
+        height: 40px;
+        /* kuvakkeen korkeus */
+        transition: transform 0.2s;
+        /* pieni hover-efekti */
+    }
+
+    .linkedin-icon:hover {
+        transform: scale(1.1);
+        /* suurentuu hiiren päälle */
+        cursor: pointer;
+        /* näyttää klikattavalta */
+    }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+    section {
+        width: 50%;
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+
+    }
+
+    .Ansioluettelo h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .Otayhteyttä h1 {
+        font-size: 25px;
+        text-align: center;
+
+    }
+
+    nav .btn {
+        display: inline-block;
+        width: auto;
+        padding: 5px 15px;
+        margin: 5px;
+    }
+
+    .back-btn {
+        padding: 4px 11px;
+        font-size: 12px;
+        max-width: 50px;
+    }
+
+    .cv-row {
+        display: block;
+    }
+
+    .column {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .left,
+    .right {
+        float: none;
+    }
+
+    .cv-row h3 {
+        font-size: 20px;
+    }
+
+    .cv-row h4 {
+        font-size: 18px;
+    }
+
+    .cv-row p,
+    .cv-row li {
+        font-size: 15px;
+    }
+
+    .contact-form {
+        width: 60%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .column img {
+        height: auto;
+        max-width: 325px;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1023px) {
+    section {
+        width: 60%;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+
+    }
+
+    .Ansioluettelo h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .Otayhteyttä h1 {
+        font-size: 40px;
+        text-align: center;
+
+    }
+
+    nav .btn {
+        display: inline-block;
+        width: auto;
+        padding: 10px 25px;
+        margin: 10px;
+    }
+
+    .back-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+        max-width: 50px;
+    }
+
+    .cv-row h3 {
+        font-size: 22px;
+    }
+
+    .cv-row h4 {
+        font-size: 20px;
+    }
+
+    .cv-row p,
+    .cv-row li {
+        font-size: 16px;
+    }
+
+
+}
+
+
+
+
+@media only screen and (min-width: 1024px) {
+    section {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 60px;
+
+    }
+
+    .Ansioluettelo h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .Otayhteyttä h1 {
+        font-size: 60px;
+        text-align: center;
+
+    }
+
+    nav .btn {
+        display: inline-block;
+        width: auto;
+        padding: 10px 25px;
+        margin: 10px;
+    }
+
+    .back-btn {
+        padding: 8px 15px;
+        font-size: 16px;
+        max-width: 50px;
+        text-align: center;
+    }
+
+    .cv-row h3 {
+        font-size: 26px;
+    }
+
+    .cv-row h4 {
+        font-size: 22px;
+    }
+
+    .cv-row p,
+    .cv-row li {
+        font-size: 18px;
+    }
+
+    .column img {
+        height: auto;
+        min-width: 500px;
+    }
+}
